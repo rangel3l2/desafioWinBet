@@ -20,7 +20,7 @@ const JsonData =
         "winner1Bet": "",
         "winner2Bet": "",
         "valueBet": null
-        }
+    }
 
 
 main()
@@ -185,6 +185,7 @@ function createAnotherBets(){
     createCard(layout.winner2BetTitle,3,layout.winner2BetTitleSelector, layout.winner1BetContentSelector)
     
     
+    
 
 } 
 
@@ -206,7 +207,7 @@ function createEndBet(){
     const betValue = document.createElement('div')
     betValue.classList.add('betValue')
     const contentBetValue = document.createElement('div')
-    contentBetValue.innerText = 'R$'
+    contentBetValue.innerHTML = '<span>R$</span>'
     contentBetValue.classList.add('contentBetValue')
     const inputTextValue = document.createElement('input')
     contentBetValue.append(inputTextValue)
@@ -216,8 +217,8 @@ function createEndBet(){
     buttomEndBet.classList.add('buttomEndBet')
     buttomEndBet.innerHTML = layout.valueBetTitle
     buttomEndBet.addEventListener('click', function(){
-
-        console.log(JsonData)
+        
+        console.log(JSON.stringify(JsonData))
     })
 
    

@@ -190,6 +190,7 @@ span{
     display: flex;
     flex-direction: column;         
     border-bottom: #c8c0c0 0.5px solid;
+    margin: auto;
 
 }
 .containerBetValue{
@@ -233,7 +234,8 @@ span{
     height: 50px;
 }
 .contentBetValue{
-   
+    justify-content: center;
+    align-content: center;
     display: flex;
 }
 .inputTextValue{
